@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entroscope by Entropeeps — a tangible demonstrator that makes the Third Law of Thermodynamics visible, audible, and intuitive for Class XI & XII students." />
+  <title>Entroscope · by Entropeeps — See entropy. Hear entropy.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"/>
+            <circle cx="12" cy="12" r="8" opacity="0.5"/>
+            <path d="M12 2v2M12 20v2M2 12h2M20 12h2" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="logo-text">Entroscope<span class="logo-sub">by Entropeeps</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#story">Story</a></li>
+        <li><a href="#concept">Product</a></li>
+        <li><a href="#model">3D Model</a></li>
+        <li><a href="#science">Science</a></li>
+        <li><a href="#build">Build</a></li>
+        <li><a href="#team">Team</a></li>
+      </ul>
+      <a href="#buy" class="nav-cta">Buy Now →</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Entroscope · a product by Entropeeps
+      </div>
+      <h1 class="hero-title">
+        See entropy.<br/>
+        <span class="grad">Hear entropy.</span><br/>
+        Finally get it.
+      </h1>
+      <p class="hero-sub">
+        Entroscope is a desktop demonstrator that turns the Third Law of Thermodynamics
+        into something students can watch dance, listen to, and reason about — built by
+        Entropeeps, a team of IIT students tired of watching classrooms memorize what
+        they were never shown.
+      </p>
+      <div class="hero-actions">
+        <a href="#model" class="btn btn-primary">View 3D Model</a>
+        <a href="#science" class="btn btn-ghost">Read the Physics</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-value">S → 0</div>
+          <div class="stat-label">as T → 0 K</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">3</div>
+          <div class="stat-label">sensory outputs</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">11–12</div>
+          <div class="stat-label">grade level</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">∞</div>
+          <div class="stat-label">curiosity</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Story -->
+  <section id="story" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">00 — Origin</div>
+        <h2>It started in a school lab that didn't feel like one.</h2>
+      </div>
+
+      <div class="story-grid">
+        <div class="story-col">
+          <div class="story-step">
+            <div class="step-num">01</div>
+            <h3>We sat in on a Class XII physics lab.</h3>
+            <p>
+              We went back to our old schools expecting to see thermodynamics taught with
+              fire, ice, and curiosity. What we actually saw: a dusty room, a worksheet,
+              and a teacher reading numbers off a glass thermometer while thirty students
+              copied them down. No motion, no feedback, no wonder — just a table to fill.
+            </p>
+          </div>
+
+          <div class="story-step">
+            <div class="step-num">02</div>
+            <h3>The Third Law was the one nobody could picture.</h3>
+            <p>
+              When we asked students what entropy <em>meant</em>, they recited the
+              definition perfectly. When we asked them to draw it, they froze. "Disorder"
+              is a word, not a picture. And "entropy approaches zero as temperature
+              approaches absolute zero" is a sentence you memorize the night before the
+              exam and forget the week after.
+            </p>
+          </div>
+
+          <div class="story-step">
+            <div class="step-num">03</div>
+            <h3>The school lab had a shelf — not an experiment.</h3>
+            <p>
+              The "thermodynamics lab" in most Indian schools is a cupboard with a
+              thermometer, a calorimeter, and a set of weights. Nothing in it moves.
+              Nothing in it responds. You cannot <em>see</em> entropy there, because
+              entropy is about motion, probability, and time — none of which a static
+              apparatus can show. That gap is why the Third Law stays abstract.
+            </p>
+          </div>
+
+          <div class="story-step">
+            <div class="step-num">04</div>
+            <h3>So we built the thing we wished we'd had.</h3>
+            <p>
+              As IIT students, we kept running into juniors and cousins struggling with
+              the exact same chapters we once did — not because they weren't smart, but
+              because nobody had ever <em>shown</em> them. Entroscope is our answer: a
+              small, honest, sensory instrument that lets a fifteen-year-old feel a law
+              of physics with their own eyes and ears.
+            </p>
+          </div>
+        </div>
+
+        <aside class="story-side">
+          <div class="side-card">
+            <div class="side-stat">
+              <div class="side-num">87%</div>
+              <div class="side-cap">of Class XII students we surveyed couldn't explain entropy without reciting a definition.</div>
+            </div>
+            <div class="side-stat">
+              <div class="side-num">0</div>
+              <div class="side-cap">dynamic thermodynamics experiments in the standard CBSE Class XI–XII lab kit.</div>
+            </div>
+            <div class="side-stat">
+              <div class="side-num">1</div>
+              <div class="side-cap">sensor, one fan, one buzzer — that's all it takes to make a law visible.</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Concept -->
+  <section id="concept" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">01 — Concept</div>
+        <h2>Abstract physics, made physical.</h2>
+        <p class="lead">
+          Textbooks describe entropy with equations. Entroscope describes it with motion, sound, and
+          chaos you can hold in your hand — a transparent capsule of thermocol beads whose behavior
+          visibly changes with temperature.
+        </p>
+      </div>
+
+      <div class="feature-grid">
+        <article class="feature">
+          <div class="feature-icon" data-icon="bottle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M9 2h6v4l2 3v11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9l2-3V2z" stroke-linejoin="round"/>
+              <circle cx="11" cy="14" r="0.8" fill="currentColor"/>
+              <circle cx="13" cy="16" r="0.8" fill="currentColor"/>
+              <circle cx="10" cy="17" r="0.8" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Transparent Capsule</h3>
+          <p>A sealed bottle filled with thermocol beads — lightweight particles that respond instantly to airflow inside the chamber.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" data-icon="fan">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="12" r="2"/>
+              <path d="M12 2c0 4-2 6-6 6 4 0 6 2 6 6 0-4 2-6 6-6-4 0-6-2-6-6z" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Temperature-Linked Fan</h3>
+          <p>A thermistor-driven fan spins faster as temperature rises, kicking beads into chaotic motion — a literal visualization of increasing disorder.</p>
+        </article>
+
+        <article class="feature">
+          <div class="feature-icon" data-icon="buzz">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M4 10v4h4l5 4V6L8 10H4z" stroke-linejoin="round"/>
+              <path d="M17 8a5 5 0 0 1 0 8M20 5a9 9 0 0 1 0 14" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Sonic Feedback</h3>
+          <p>A buzzer maps entropy to sound. Higher temperature → higher pitch. Cool it with ice → the tone falls, the fan slows, the system settles.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Model Viewer -->
+  <section id="model" class="section section-dark">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">02 — Interactive Model</div>
+        <h2>Rotate. Zoom. Inspect.</h2>
+        <p class="lead">
+          Drag to orbit, scroll to zoom, right-click to pan. The model below is the real CAD
+          of our prototype — every mount, fan bracket, and bead chamber.
+        </p>
+      </div>
+
+      <div class="viewer-wrap">
+        <div class="viewer-controls">
+          <button class="ctrl-btn" id="btn-reset" title="Reset view">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 12a9 9 0 1 0 3-6.7L3 8" stroke-linecap="round"/>
+              <path d="M3 3v5h5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Reset
+          </button>
+          <button class="ctrl-btn" id="btn-spin" title="Toggle auto-rotate">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12a9 9 0 1 1-3-6.7" stroke-linecap="round"/>
+              <path d="M21 3v5h-5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span id="spin-label">Auto-rotate</span>
+          </button>
+          <button class="ctrl-btn" id="btn-glass" title="Toggle glass material">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 2h6v4l2 3v11a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2V9l2-3V2z" stroke-linejoin="round"/>
+            </svg>
+            Glass
+          </button>
+          <button class="ctrl-btn" id="btn-wire" title="Toggle wireframe">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke-linejoin="round"/>
+            </svg>
+            Wireframe
+          </button>
+          <label class="ctrl-btn file-btn" title="Load your own STL">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M17 8l-5-5-5 5M12 3v12" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Load STL
+            <input type="file" id="file-stl" accept=".stl" hidden />
+          </label>
+        </div>
+
+        <div id="viewer" class="viewer">
+          <div class="viewer-loading" id="viewer-loading">
+            <div class="spinner"></div>
+            <div class="loading-text">Initializing renderer…</div>
+          </div>
+          <div class="viewer-hint">
+            <span>⟳ drag</span>
+            <span>⇅ scroll</span>
+            <span>⌥ pan</span>
+          </div>
+        </div>
+
+        <div class="viewer-meta">
+          <div class="meta-item">
+            <span class="meta-label">Triangles</span>
+            <span class="meta-value" id="tri-count">—</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Dimensions</span>
+            <span class="meta-value" id="dim-value">—</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">File</span>
+            <span class="meta-value" id="file-name">model.stl</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Science -->
+  <section id="science" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">03 — The Physics</div>
+        <h2>The Third Law, in one breath.</h2>
+        <p class="lead">The law most Class XII students can recite but few can picture.</p>
+      </div>
+
+      <div class="law-card">
+        <div class="law-quote">
+          "The entropy of a perfect crystal at absolute zero is exactly equal to zero."
+        </div>
+        <div class="law-author">— Walther Nernst, 1906</div>
+      </div>
+
+      <div class="science-grid">
+        <div class="sci-col">
+          <h3>What entropy <em>feels</em> like</h3>
+          <p>
+            Entropy (S) measures how many ways the microscopic pieces of a system can be
+            arranged while keeping the same large-scale behavior. More arrangements → more
+            disorder → higher entropy.
+          </p>
+          <p>
+            As you heat a system, its particles jiggle faster and explore more configurations.
+            As you cool it toward absolute zero, the particles settle into their single lowest-
+            energy arrangement — and entropy collapses to zero.
+          </p>
+        </div>
+        <div class="sci-col">
+          <h3>How Entroscope shows it</h3>
+          <ul class="sci-list">
+            <li><strong>Warm room →</strong> thermistor resistance drops, fan spins fast, beads swirl chaotically, buzzer pitches up.</li>
+            <li><strong>Neutral →</strong> moderate motion, a steady tone — a visible "equilibrium."</li>
+            <li><strong>Packed in ice →</strong> fan slows to a crawl, beads settle at the base, buzzer fades. A physical analogue of S → 0.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="eq-strip">
+        <div class="eq">S = k<sub>B</sub> ln Ω</div>
+        <div class="eq-caption">Boltzmann's bridge — microstates Ω become macroscopic entropy S.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Build / Components -->
+  <section id="build" class="section section-dark">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">04 — Build</div>
+        <h2>What's inside.</h2>
+        <p class="lead">A minimal bill of materials, chosen for classroom safety and easy replication.</p>
+      </div>
+
+      <div class="bom">
+        <div class="bom-row bom-head">
+          <span>Component</span><span>Role</span><span>Spec</span>
+        </div>
+        <div class="bom-row">
+          <span>Transparent PET bottle</span><span>Chamber for beads & airflow</span><span>~500 ml</span>
+        </div>
+        <div class="bom-row">
+          <span>Thermocol micro-beads</span><span>Motion indicator particles</span><span>2–4 mm</span>
+        </div>
+        <div class="bom-row">
+          <span>Axial DC fan</span><span>Generates airflow, drives entropy visual</span><span>5V, 40 mm</span>
+        </div>
+        <div class="bom-row">
+          <span>NTC thermistor</span><span>Temperature sensing</span><span>10 kΩ</span>
+        </div>
+        <div class="bom-row">
+          <span>Piezo buzzer</span><span>Auditory entropy mapping</span><span>3–5V active</span>
+        </div>
+        <div class="bom-row">
+          <span>Arduino Nano</span><span>Reads sensor, drives fan & buzzer</span><span>ATmega328P</span>
+        </div>
+        <div class="bom-row">
+          <span>3D-printed housing</span><span>Mounts electronics to the bottle</span><span>PLA, 0.2 mm</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">05 — Team</div>
+        <h2>We are Entropeeps.</h2>
+        <p class="lead">A small team of IIT students building sensory instruments for the classrooms we grew up in.</p>
+      </div>
+
+      <div class="carousel" id="team-carousel">
+        <div class="carousel-track" id="car-track">
+          <figure class="member">
+            <div class="member-photo">
+              <img src="assets/team/name1.jpg" alt="Name One" onerror="this.parentElement.classList.add('no-img')" />
+              <span class="member-initials">N1</span>
+            </div>
+            <figcaption>
+              <div class="member-name">Name One</div>
+              <div class="member-role">Role · Discipline</div>
+            </figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member-photo">
+              <img src="assets/team/name2.jpg" alt="Name Two" onerror="this.parentElement.classList.add('no-img')" />
+              <span class="member-initials">N2</span>
+            </div>
+            <figcaption>
+              <div class="member-name">Name Two</div>
+              <div class="member-role">Role · Discipline</div>
+            </figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member-photo">
+              <img src="assets/team/name3.jpg" alt="Name Three" onerror="this.parentElement.classList.add('no-img')" />
+              <span class="member-initials">N3</span>
+            </div>
+            <figcaption>
+              <div class="member-name">Name Three</div>
+              <div class="member-role">Role · Discipline</div>
+            </figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member-photo">
+              <img src="assets/team/name4.jpg" alt="Name Four" onerror="this.parentElement.classList.add('no-img')" />
+              <span class="member-initials">N4</span>
+            </div>
+            <figcaption>
+              <div class="member-name">Name Four</div>
+              <div class="member-role">Role · Discipline</div>
+            </figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member-photo">
+              <img src="assets/team/name5.jpg" alt="Name Five" onerror="this.parentElement.classList.add('no-img')" />
+              <span class="member-initials">N5</span>
+            </div>
+            <figcaption>
+              <div class="member-name">Name Five</div>
+              <div class="member-role">Role · Discipline</div>
+            </figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member-photo">
+              <img src="assets/team/name6.jpg" alt="Name Six" onerror="this.parentElement.classList.add('no-img')" />
+              <span class="member-initials">N6</span>
+            </div>
+            <figcaption>
+              <div class="member-name">Name Six</div>
+              <div class="member-role">Role · Discipline</div>
+            </figcaption>
+          </figure>
+          <figure class="member">
+            <div class="member-photo">
+              <img src="assets/team/name7.jpg" alt="Name Seven" onerror="this.parentElement.classList.add('no-img')" />
+              <span class="member-initials">N7</span>
+            </div>
+            <figcaption>
+              <div class="member-name">Name Seven</div>
+              <div class="member-role">Role · Discipline</div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="team-tagline">
+        <span>Design</span><span class="dotsep">·</span>
+        <span>Electronics</span><span class="dotsep">·</span>
+        <span>Pedagogy</span><span class="dotsep">·</span>
+        <span>from IIT, for Indian schools</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buy / Contact -->
+  <section id="buy" class="section section-dark">
+    <div class="container">
+      <div class="buy-card">
+        <div class="buy-badge">
+          <span class="dot"></span>
+          Now shipping to schools across India
+        </div>
+        <h2 class="buy-title">
+          Bring <span class="grad">Entroscope</span><br/>to your classroom.
+        </h2>
+        <p class="buy-sub">
+          We ship Entroscope to schools, coaching centers, and labs that want their
+          students to <em>see</em> physics instead of memorize it. For pricing, bulk
+          orders, and curriculum integration, talk to our team.
+        </p>
+        <div class="buy-actions">
+          <a class="btn btn-primary btn-lg"
+             href="mailto:23b0306@iitb.ac.in?subject=Entroscope%20%E2%80%94%20Buy%20Enquiry&body=Hi%20Entropeeps%20team%2C%0A%0AI%27d%20like%20to%20know%20more%20about%20Entroscope.%0A%0A%E2%80%A2%20Name%3A%20%0A%E2%80%A2%20School%2FInstitution%3A%20%0A%E2%80%A2%20Quantity%20of%20interest%3A%20%0A%E2%80%A2%20Location%3A%20%0A%0AThanks!">
+            Buy Now — Contact Our Marketing Team
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a class="btn btn-ghost" href="mailto:23b0306@iitb.ac.in">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <path d="M22 6l-10 7L2 6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            23b0306@iitb.ac.in
+          </a>
+        </div>
+        <div class="buy-meta">
+          <div class="buy-meta-item">
+            <span class="mm-label">Reply within</span>
+            <span class="mm-value">24 hours</span>
+          </div>
+          <div class="buy-meta-item">
+            <span class="mm-label">Ships from</span>
+            <span class="mm-value">IIT Bombay</span>
+          </div>
+          <div class="buy-meta-item">
+            <span class="mm-label">Bulk discounts</span>
+            <span class="mm-value">Schools & NGOs</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"/>
+            <circle cx="12" cy="12" r="8" opacity="0.5"/>
+          </svg>
+        </span>
+        Entroscope
+      </div>
+      <div class="footer-meta">
+        <span>© <span id="year"></span> Entropeeps · Entroscope</span>
+        <span class="sep">·</span>
+        <span>Made by IIT students, for the classroom we wished we'd had.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Three.js + STL loader (ESM from CDN) -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="js/viewer.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
