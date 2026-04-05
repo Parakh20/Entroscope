@@ -269,20 +269,34 @@ function tryAutoLoad() {
     () => { /* no glass file — fine */ }
   );
 
-  loader.load(
-    'assets/model.stl',
-    (geom) => addGeometry(geom, 'model.stl'),
-    undefined,
-    () => {
-      // File not present — keep placeholder, hide loading
-      loadingEl.querySelector('.loading-text').textContent = 'Place your STL at assets/model.stl — or use “Load STL”';
-      setTimeout(() => loadingEl.classList.add('hidden'), 900);
-      // Frame the placeholder nicely
-      frameObject(placeholder);
-      fileNameEl.textContent = 'placeholder';
-      triCountEl.textContent = '—';
-    }
-  );
+  // Use embedded base64 data (works with file:// and http://)
+  if (window.MODEL_STL_B64) {
+    loader.load(
+      window.MODEL_STL_B64,
+      (geom) => addGeometry(geom, 'model.stl'),
+      undefined,
+      () => {
+        loadingEl.querySelector('.loading-text').textContent = 'Failed to load model — try “Load STL”';
+        setTimeout(() => loadingEl.classList.add('hidden'), 900);
+        frameObject(placeholder);
+        fileNameEl.textContent = 'placeholder';
+        triCountEl.textContent = '—';
+      }
+    );
+  } else {
+    loader.load(
+      'assets/model.stl',
+      (geom) => addGeometry(geom, 'model.stl'),
+      undefined,
+      () => {
+        loadingEl.querySelector('.loading-text').textContent = 'Place your STL at assets/model.stl — or use “Load STL”';
+        setTimeout(() => loadingEl.classList.add('hidden'), 900);
+        frameObject(placeholder);
+        fileNameEl.textContent = 'placeholder';
+        triCountEl.textContent = '—';
+      }
+    );
+  }
 }
 tryAutoLoad();
 
